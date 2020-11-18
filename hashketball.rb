@@ -282,6 +282,6 @@ def long_name_steals_a_ton?
   if player_with_max_stat == player_with_longest_name
     result = true 
   else
-    result = end 
+    result = false
   end
 end 
