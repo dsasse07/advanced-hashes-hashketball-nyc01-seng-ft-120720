@@ -272,7 +272,7 @@ end
 def player_with_longest_name
   stat_by_player = collect_stat_by_name(:player_name)
   binding.pry
-  stat_by_player.each_with_object ({}) { |(k,v),hash| hash[k] = v.length}
+  name_length_values = stat_by_player.each_with_object ({}) { |(k,v),hash| hash[k] = v.length}
   binding.pry
   longest_name = find_max_stat_by_player(stat_by_player)
   longest_name
