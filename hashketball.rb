@@ -137,8 +137,7 @@ def shoe_size (player_name)
 end
 
 def team_colors (player_name)
-  # search_team_data(player_name, :colors)
-  long_name_steals_a_ton?
+  search_team_data(player_name, :colors)
 end
   
 def team_names
