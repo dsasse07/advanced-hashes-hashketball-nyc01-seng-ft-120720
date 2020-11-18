@@ -137,7 +137,8 @@ def shoe_size (player_name)
 end
 
 def team_colors (player_name)
-  search_team_data(player_name, :colors)
+  # search_team_data(player_name, :colors)
+  player_with_longest_name
 end
   
 def team_names
@@ -268,3 +269,11 @@ def winning_team
   team_array[team_points.index((team_points.max))] + " is the winner!"
 end
 
+def player_with_longest_name
+  stat_by_player = collect_stat_by_name(:player_name)
+  binding.pry
+  stat_by_player.transform_values{&:.length}
+  binding.pry
+  longest_name = find_max_stat_by_player(stat_by_player)
+  longest_name
+end
