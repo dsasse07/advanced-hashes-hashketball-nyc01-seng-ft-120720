@@ -281,7 +281,7 @@ def long_name_steals_a_ton?
   player_with_max_stat = find_max_stat_by_player(stat_by_player)
   long_name = player_with_longest_name
   binding.pry
-  if player_with_max_stat == long_name
+  if player_with_max_stat == player_with_longest_name
     result = true 
   else
     result = false
