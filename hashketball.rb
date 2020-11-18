@@ -279,7 +279,7 @@ end
 def long_name_steals_a_ton?
   stat_by_player = collect_stat_by_name(:steals)
   player_with_max_stat = find_max_stat_by_player(stat_by_player)
-  biding.pry
+  binding.pry
   if player_with_max_stat == player_with_longest_name
     result = true 
   else
